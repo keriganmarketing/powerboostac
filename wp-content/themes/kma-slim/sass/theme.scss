@@ -525,6 +525,12 @@ body {
     margin-left: 2rem;
   }
 
+  .entry-content.has-sidebar {
+    @media screen and (min-width: $desktop){
+      padding-right: 4rem;
+    }
+  }
+
   .sidebar-section {
     margin: 2rem 0;
     line-height: $body-line-height;
