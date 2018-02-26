@@ -42,11 +42,15 @@ use Includes\Modules\Navwalker\BulmaNavwalker;
                             </a>
                         </div>
                         <div class="navbar-middle is-hidden-mobile">
-                            <img class="tagline" src="<?php echo get_template_directory_uri() . '/img/tagline.png'; ?>" >
+                            <img class="tagline" src="<?php echo get_template_directory_uri() . '/img/tagline.png'; ?>">
                         </div>
                         <div class="navbar-end mini-nav is-hidden-mobile">
                             <div class="navbar-item">
-                                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="#">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </span>
+                                </a>
                             </div>
                             <div class="navbar-item seperator">|</div>
                             <div class="navbar-item">

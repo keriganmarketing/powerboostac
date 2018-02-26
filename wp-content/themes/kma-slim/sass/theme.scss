@@ -371,6 +371,7 @@ body {
 
 //Middle section
 #mid {
+  line-height: $body-line-height;
   position: relative;
   flex: 1 0 auto;
   z-index: 2;
@@ -448,14 +449,18 @@ body {
       .column {
         padding: 2rem;
 
+        p {
+          line-height: $content-heading-line-height;
+        }
+
         .image {
           text-align: center;
           display: block;
           margin: .5rem auto 1.5rem;
           border-radius: 50%;
-          height: 120px;
-          width: 120px;
-          padding: .85rem;
+          height: 96px;
+          width: 96px;
+          padding: .87rem;
           img {
             margin: auto;
             display: block;
@@ -518,6 +523,22 @@ body {
     list-style: disc;
     padding-left: .25rem;
     margin-left: 2rem;
+  }
+
+  .sidebar-section {
+    margin: 2rem 0;
+    line-height: $body-line-height;
+
+    .subtitle {
+      margin-top: -1.25rem;
+      margin-bottom: .5rem;
+      line-height: $content-heading-line-height;
+    }
+
+    p, a {
+      color: #424340;
+    }
+    a { font-weight: bold; }
   }
 
 }

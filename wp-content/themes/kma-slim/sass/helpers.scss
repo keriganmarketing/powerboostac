@@ -119,3 +119,13 @@
     display: none;
   }
 }
+
+.title.is-info {
+  color: $info;
+}
+.title.is-primary {
+  color: $primary;
+}
+.title.is-secondary {
+  color: $secondary
+}
