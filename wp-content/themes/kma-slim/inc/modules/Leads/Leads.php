@@ -23,7 +23,7 @@ class Leads
         date_default_timezone_set('America/Chicago');
 
         $this->postType   = 'Lead';
-        $this->domain     = 'thevirtualnephrologist.com';
+        $this->domain     = 'powerboostac.com';
 
         //separate multiple email addresses with a ';'
         $this->adminEmail = 'bryan@kerigan.com';
@@ -197,7 +197,7 @@ class Leads
         $this->sendEmail(
             [
                 'to'        => $this->adminEmail,
-                'from'      => get_bloginfo() . ' <noreply@' . $this->domain . '>',
+                'from'      => get_bloginfo() . ' <noreply@mg.' . $this->domain . '>',
                 'subject'   => $this->postType . ' submitted on website',
                 'cc'        => $this->ccEmail,
                 'bcc'       => $this->bccEmail,
@@ -211,7 +211,7 @@ class Leads
         $this->sendEmail(
             [
                 'to'        => $fullName . '<' . $emailAddress . '>',
-                'from'      => get_bloginfo() . ' <noreply@' . $this->domain . '>',
+                'from'      => get_bloginfo() . ' <noreply@mg.' . $this->domain . '>',
                 'subject'   => 'Your website submission has been received',
                 'bcc'       => $this->bccEmail,
                 'headline'  => 'Thank you',
