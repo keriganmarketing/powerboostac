@@ -8,7 +8,7 @@
             </figure>
             <div class="media-content">
                 <h4 class="title is-5 is-info"><strong>Better A/C Cooling</strong></h4>
-                <p class="subtitle is-6">Lowers temperatures with  same energy output.</p>
+                <p class="subtitle is-6">Lowers temperatures with <br>same energy output.</p>
                 <p><a href="/how-it-works/">How it works
                         <span class="icon is-small">
                             <i class="fa fa-play" aria-hidden="true"></i>
@@ -26,8 +26,8 @@
             </figure>
             <div class="media-content">
                 <h4 class="title is-5 is-secondary"><strong>Less Energy Usage</strong></h4>
-                <p class="subtitle is-6">Lowers electricity and maintenance costs.</p>
-                <p><a href="/how-it-works/">ASHREAE approved
+                <p class="subtitle is-6">Lowers electricity and<br>maintenance costs.</p>
+                <p><a href="/ashrae-approved/">ASHREAE approved
                         <span class="icon is-small">
                             <i class="fa fa-play" aria-hidden="true"></i>
                         </span>
@@ -44,8 +44,8 @@
             </figure>
             <div class="media-content">
                 <h4 class="title is-5 is-primary"><strong>Do-it-yourself application</strong></h4>
-                <p class="subtitle is-6">One simple set up provides lifetime system performance.</p>
-                <p><a href="/how-it-works/">Instructions
+                <p class="subtitle is-6">One simple set up provides <br>lifetime system performance.</p>
+                <p><a href="#">Instructions
                         <span class="icon is-small">
                             <i class="fa fa-play" aria-hidden="true"></i>
                         </span>
