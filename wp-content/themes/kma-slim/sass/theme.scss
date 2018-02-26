@@ -1,0 +1,651 @@
+// Theme Specific Styles
+
+// Full page Layout
+html {
+  height: 100%;
+}
+
+body {
+  height: auto !important;
+  min-height: 100%;
+  overflow-x: initial;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+
+  #MobileNavMenu {
+    width: 100%;
+    min-height: 100vh;
+    left: 100%;
+    right: -100%;
+    top: 0;
+    z-index: 3;
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.2em;
+    transition: font-size .25s;
+    @media screen and (min-width: 370px) {
+      width: 100%;
+      right: -100%;
+    }
+
+    a.menu-item.navbar-item {
+      line-height: 1.9em;
+    }
+
+    div#MobileNavClose {
+      align-items: center;
+      display: flex;
+      font-size: .8em;
+      margin: 1.5rem 0 .5rem;
+    }
+
+  }
+  #MobileNavMenu.is-active {
+    width: 100%;
+    left: auto;
+    right: 0;
+    position: relative;
+    background-color: $primary;
+    font-size: 1.6em;
+    @media screen and (min-width: 370px) {
+      width: 100%;
+    }
+
+    .nav-wrapper {
+      min-height: 100vh;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    #mobile-menu {
+      width: 100%;
+      .navbar-item {
+        padding: 0;
+        color: $white;
+        .navbar-dropdown {
+          font-size: 1.2rem;
+          padding-bottom: 0.5rem;
+          padding-top: 0.25rem;
+          transition: height .5s;
+          height: 0;
+          overflow: hidden;
+          display: none;
+        }
+      }
+      .navbar-item {
+        .navbar-dropdown.is-open {
+          height: auto;
+          display: block;
+        }
+      }
+      a.navbar-item.is-active, .navbar-link.is-active {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a.navbar-item:hover, .navbar-link:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+  }
+  .site-wrapper.menu-open {
+    display: none;
+  }
+  .site-wrapper.full-height {
+    height: 100vh;
+  }
+}
+
+//Top mini-nav
+.top-top {
+  background-color: $white;
+  text-align: center;
+  color: $grey;
+  a {
+    display: inline-block;
+    padding: .5rem;
+    color: $grey;
+    font-size: 12px;
+  }
+}
+
+//Sticky Header
+#top {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  transition: all linear .25s;
+
+  @media screen and (max-width: $desktop) {
+    width: 100%;
+    text-align: center;
+
+    .navbar-start {
+      padding: 1rem 0 0;
+    }
+
+    .navbar-end {
+      justify-content: center !important;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    position: fixed;
+  }
+
+  .top-one {
+    background: $white;
+    justify-content: space-between;
+
+    .navbar-middle {
+      padding: 1.75rem 2rem 1rem;
+
+      img {
+        width: 240px;
+      }
+    }
+  }
+
+  .navbar {
+    background-color: transparent;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+
+    .navbar-brand {
+      padding: 1rem .5rem;
+      min-height: 100%;
+      transition: all linear .5s;
+
+      .logo {
+          transition: max-width linear .5s;
+          display: block;
+          @media screen and (max-width: $tablet){
+            max-width: 200px;
+          }
+      }
+    }
+
+    .navbar-item {
+      padding: .5rem;
+      img {
+        max-height: 2.75rem;
+      }
+      a.menu-item {
+        font-size: 1em;
+        font-weight: $weight-normal;
+      }
+
+      .navbar-link::after {
+        content: "";
+        display: none;
+      }
+
+      .social svg {
+        width: 28px;
+        margin: .1rem .15rem;
+      }
+
+    }
+
+    .navbar-item a.menu-item:hover, a.current_page_item,
+    .navbar-item a.navbar-link.is-active,
+    .navbar-item.has-dropdown:hover .navbar-link,
+    .navbar-item.has-dropdown.is-active .navbar-link,
+    .navbar-item.has-dropdown:hover .navbar-link {
+      background-color: transparent;
+    }
+
+    .navbar-end {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .button {
+        height: 2.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        text-transform: none;
+        margin: 0 .5rem;
+      }
+    }
+  }
+
+  .top-two {
+    @media screen and (min-width: $desktop) {
+      background-color: $light;
+    }
+
+    .navbar {
+      justify-content: center;
+      padding: 0 0 1rem;
+
+      @media screen and (min-width: $tablet) {
+        justify-content: flex-end;
+        padding: 0;
+      }
+    }
+
+    .navbar-bottom-row {
+      flex-wrap: wrap;
+    }
+
+    #MobileNavBurger {
+      display: inline-flex;
+      align-items: center;
+      color: $info;
+      cursor: pointer;
+      padding-right: 0;
+      background-color: transparent !important;
+      height: 2.5em;
+      margin: 0 .5rem;
+
+      @media screen and (min-width: $desktop) {
+        display: none;
+      }
+
+      .navbar-burger {
+        cursor: pointer;
+        display: block;
+        height: 2.25rem;
+        position: relative;
+        width: 2.25rem;
+        margin-left: auto;
+        background-color: transparent !important;
+
+        span {
+          background-color: $info !important;
+        }
+      }
+    }
+
+    .main-navigation-menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @media screen and (max-width: $desktop) {
+        display: none;
+      }
+    }
+
+    .navbar-item {
+      padding: 0;
+      @media screen and (min-width: $desktop) {
+        padding: .5rem;
+      }
+      a.menu-item {
+        color: $grey;
+        padding: .5rem;
+        @media screen and (min-width: $desktop) {
+          padding: 1rem .5rem;
+        }
+      }
+
+      .navbar-dropdown {
+        top: 92%;
+        padding: .5rem;
+        min-width: 200px;
+        border-top: 6px solid $primary;
+        border-radius: 0;
+        color: $primary;
+
+        a.menu-item {
+          color: $primary;
+          padding: .5rem;
+        }
+        a.menu-item:hover {
+          color: #000;
+        }
+
+        .navbar-dropdown {
+          top: 0;
+          left: 100%;
+        }
+      }
+
+      .navbar-item .navbar-dropdown {
+        display: none;
+      }
+
+      .navbar-item.is-hoverable:hover > .navbar-dropdown {
+        display: block;
+      }
+
+    }
+  }
+
+}
+
+@media screen and (min-width: $desktop) {
+  .scrolling #top {
+    .logo {
+      max-width: 200px;
+    }
+  }
+}
+
+.support-header {
+  h1 {
+    color: $white;
+    font-weight: $weight-normal;
+  }
+  background-color: $primary;
+  background-image: url("/wp-content/themes/kma-slim/img/hex-pattern.png");
+
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.breadcrumbs {
+  padding: .5rem;
+  p, a {
+    font-size: 12px;
+    color: $grey;
+  }
+  strong {
+    color: #A7D163;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .home #mid {
+    padding-top: 54px;
+  }
+  .sticky-header-pad.support {
+    height: 32px;
+  }
+}
+
+//Middle section
+#mid {
+  position: relative;
+  flex: 1 0 auto;
+  z-index: 2;
+  overflow: hidden;
+  @media screen and (min-width: $desktop) {
+    padding-top: 117px;
+  }
+
+  .home-header {
+    background-image: url("/wp-content/themes/kma-slim/img/mobile/header-image.png");
+    background-size: cover;
+    background-position: top center;
+    height: 414px;
+    @media screen and (min-width: $tablet) {
+      height: 414px;
+      background-image: url("/wp-content/themes/kma-slim/img/desktop/header-image.png");
+    }
+    @media screen and (min-width: $desktop) {
+      height: 547px;
+    }
+
+    .container { height: 100%; }
+
+    .hero-content {
+      align-items: flex-end;
+      justify-content: center;
+      height: 100%;
+      padding: 2rem;
+
+      @media screen and (min-width: $tablet) {
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      @media screen and (min-width: $desktop) {
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+      }
+
+      .hero-item {
+        h1 {
+          color: $info;
+          font-weight: $weight-bold;
+          @media screen and (max-width: $tablet) {
+            font-size: 35px;
+          }
+        }
+        strong {
+          color: $info;
+        }
+        padding: 4rem 0 0;
+      }
+    }
+  }
+
+  //sections
+  .section {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    padding: 2.5rem 1rem;
+    @media screen and (min-width: $tablet) {
+      padding: 3rem 1rem;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 4rem 0;
+    }
+  }
+
+  .big-features {
+    .columns {
+      .column {
+        padding: 2rem;
+
+        .image {
+          text-align: center;
+          display: block;
+          margin: .5rem auto 1.5rem;
+          border-radius: 50%;
+          height: 120px;
+          width: 120px;
+          padding: .85rem;
+          img {
+            margin: auto;
+            display: block;
+            width: auto;
+            height: auto;
+          }
+        }
+        h2, p {
+          max-width: 240px;
+          margin: .5rem auto;
+        }
+      }
+      .cooling {
+        .image {
+          border: $secondary 2px solid;
+        }
+        h2 {
+          color: $secondary;
+        }
+      }
+      .energy {
+        .image {
+          border: $primary 2px solid;
+        }
+        h2 {
+          color: $primary;
+        }
+      }
+      .diy {
+        .image {
+          border: $info 2px solid;
+        }
+        h2 {
+          color: $info;
+        }
+      }
+    }
+  }
+
+  .efficiency-loss {
+    h2 {
+      color: $primary;
+      font-weight: $weight-bold;
+    }
+    background-color: #ecedeb;
+    box-shadow: inset 0 0 1rem rgba(0,0,0,.2);
+
+    .columns {
+      padding: 1rem;
+    }
+  }
+
+  .how-it-works {
+    .section-action {
+      padding: 1rem 0;
+    }
+  }
+
+  ul li {
+    list-style: disc;
+    padding-left: .25rem;
+    margin-left: 2rem;
+  }
+
+}
+
+.call-to-action {
+  h3 { color: $white; }
+  background-color: $primary;
+  background-image: url("/wp-content/themes/kma-slim/img/hex-pattern.png");
+
+  .button {
+    color: $info;
+    border: 2px solid $info;
+  }
+}
+
+#bot {
+  background-color: #424340;
+  @media screen and (min-width:$desktop){
+    background-image: url("/wp-content/themes/kma-slim/img/footer-texture.jpg");
+  }
+
+  .footer-navigation-menu {
+    font-size: 22px;
+    text-align: center;
+
+    @media screen and (min-width: $tablet){
+      text-align: right;
+    }
+    list-style: none;
+
+    li {
+      margin: 1rem .5rem;
+      padding: 0;
+    }
+
+    a {
+      font-weight: $weight-bold;
+      color: #FFF;
+      text-transform: uppercase;
+    }
+  }
+
+  .footer-logo-container {
+    padding: 1rem;
+    @media screen and (min-width: $tablet){
+      padding: 2rem;
+    }
+    @media screen and (min-width: $desktop){
+      padding: 3rem;
+    }
+    img {
+      width: 300px;
+    }
+  }
+
+  h4, h5, p, a {
+    text-align: center;
+    color: $white;
+    font-weight: $weight-normal;
+    justify-content: center;
+
+    @media screen and (min-width: $tablet){
+      text-align: left;
+      justify-content: flex-start;
+    }
+  }
+
+  h4 {
+    font-size: 22px;
+    font-weight: $weight-bold;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    margin-top: .8rem;
+    vertical-align: center;
+    font-size: 18px;
+    font-weight: $weight-normal;
+    span {
+      display: inline-block;
+    }
+    .social {
+      margin-bottom: -5px;
+      padding: 0 .5rem;
+    }
+  }
+
+}
+
+///page CTA
+.page-cta {
+
+}
+
+///Footer
+#bot {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 1rem;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    padding: 3rem 0 3rem;
+    text-align: left;
+  }
+}
+
+#bot-bot {
+  padding: .5rem 0;
+  background-color: #3c3c3c;
+
+  @media screen and (min-width: $desktop) {
+    padding: .5rem 1rem;
+  }
+
+  p {
+    color: #f8f5ef;
+    font-size: .8em;
+    a {
+      color: #f8f5ef;
+      text-decoration: underline;
+    }
+
+    .siteby {
+      display: inline-block;
+
+      svg {
+        height: 11px;
+      }
+    }
+  }
+}
