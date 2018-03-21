@@ -60,6 +60,14 @@ add_action( 'after_setup_theme', function() {
 
 } );
 
+add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
+function jk_dequeue_styles( $enqueue_styles ) {
+    unset( $enqueue_styles['woocommerce-general'] );	// Remove the gloss
+    //unset( $enqueue_styles['woocommerce-layout'] );		// Remove the layout
+    //unset( $enqueue_styles['woocommerce-smallscreen'] );	// Remove the smallscreen optimisation
+    return $enqueue_styles;
+}
+
 add_action( 'wp_enqueue_scripts', function() {
     wp_enqueue_script( 'scripts',get_template_directory_uri() . '/app.js', array(), '0.0.1', true );
 } );
@@ -75,3 +83,6 @@ function getPageChildren($pageName)
 
     return $children;
 }
+
+//WooCommerce stuff
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 10 );
