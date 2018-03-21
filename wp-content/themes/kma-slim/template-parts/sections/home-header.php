@@ -9,7 +9,7 @@
                         <strong>Only $295</strong>
                     </div>
                     <div class="column">
-                        <a href="#" class="button is-primary" >Buy Now</a>
+                        <a href="http://powerboostac.test/product/power-boost-kit/" class="button is-primary" >Buy Now</a>
                     </div>
                 </div>
             </div>
