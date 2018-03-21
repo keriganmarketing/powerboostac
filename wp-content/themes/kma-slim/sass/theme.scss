@@ -381,13 +381,13 @@ body {
   }
 
   .home-header {
-    background-image: url("/wp-content/themes/kma-slim/img/mobile/header-image.png");
+    background-image: url("/wp-content/themes/kma-slim/img/mobile/header-image.jpg");
     background-size: cover;
     background-position: top center;
     height: 414px;
     @media screen and (min-width: $tablet) {
       height: 414px;
-      background-image: url("/wp-content/themes/kma-slim/img/desktop/header-image.png");
+      background-image: url("/wp-content/themes/kma-slim/img/desktop/header-image.jpg");
     }
     @media screen and (min-width: $desktop) {
       height: 547px;

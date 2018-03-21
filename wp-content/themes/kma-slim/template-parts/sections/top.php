@@ -97,7 +97,7 @@ use Includes\Modules\Navwalker\BulmaNavwalker;
                             'walker'         => new BulmaNavwalker()
                         ]); ?>
                         <div class="navbar-end">
-                            <a class="button is-primary" href="http://powerboostac.test/product/power-boost-kit/">Buy Now</a>
+                            <a class="button is-primary" href="/product/power-boost-kit/">Buy Now</a>
                         </div>
                     </nav>
                 </div>
