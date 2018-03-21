@@ -86,3 +86,16 @@ function getPageChildren($pageName)
 
 //WooCommerce stuff
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 10 );
+
+add_filter('woocommerce_checkout_fields', function ($fields) {
+    foreach ($fields as &$fieldset) {
+        foreach ($fieldset as &$field) {
+            // if you want to add the form-group class around the label and the input
+            $field['class'][] = 'field';
+
+            // add form-control to the actual input
+            $field['input_class'][] = 'input';
+        }
+    }
+    return $fields;
+} );
