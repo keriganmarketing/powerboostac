@@ -416,6 +416,8 @@ body {
         h1 {
           color: $info;
           font-weight: $weight-bold;
+          line-height: 1em;
+          margin-bottom: 2.5rem;
           @media screen and (max-width: $tablet) {
             font-size: 35px;
           }

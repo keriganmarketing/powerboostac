@@ -27,7 +27,7 @@
             <div class="media-content">
                 <h4 class="title is-5 is-secondary"><strong>Less Energy Usage</strong></h4>
                 <p class="subtitle is-6">Lowers electricity and<br>maintenance costs.</p>
-                <p><a href="/ashrae-approved/">ASHREAE approved
+                <p><a href="/ashrae-approved/">ASHRAE approved
                         <span class="icon is-small">
                             <i class="fa fa-play" aria-hidden="true"></i>
                         </span>
@@ -43,8 +43,8 @@
                 </p>
             </figure>
             <div class="media-content">
-                <h4 class="title is-5 is-primary"><strong>Do-it-yourself application</strong></h4>
-                <p class="subtitle is-6">One simple set up provides <br>lifetime system performance.</p>
+                <h4 class="title is-5 is-primary"><strong>Do-It-Yourself Solution</strong></h4>
+                <p class="subtitle is-6">Easy application in<br>30 minutes or less</p>
                 <p><a href="#">Instructions
                         <span class="icon is-small">
                             <i class="fa fa-play" aria-hidden="true"></i>

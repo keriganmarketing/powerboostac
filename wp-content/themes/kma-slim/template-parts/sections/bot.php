@@ -27,10 +27,7 @@ use Includes\Modules\Social\SocialSettingsPage;
                     </div>
                     <div class="column is-3">
                         <h4>Contact</h4>
-                        <h5>Support:</h5>
-                        <p><a href="tel:#">XXX-XXX-XXXX</a></p>
-                        <h5>General Inquiries</h5>
-                        <p><a href="tel:#">XXX-XXX-XXXX</a></p>
+
                         <h5 class="is-flex is-aligned"><span>Connect: </span><span class="social has-text-left">
                                     <?php
                                     $socialLinks = new SocialSettingsPage();

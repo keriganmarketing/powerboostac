@@ -18,8 +18,8 @@
             <div class="image">
                 <img src="<?php echo get_template_directory_uri() . '/img/DIY@2x.png'; ?>">
             </div>
-            <h2 class="title is-3">Do-it-yourself application</h2>
-            <p class="subtitle is-6">One simple set up provides <br>lifetime system performance.</p>
+            <h2 class="title is-3">Do-It-Yourself Solution</h2>
+            <p class="subtitle is-6">Easy application in<br>30 minutes or less.</p>
         </div>
     </div>
 </div>
