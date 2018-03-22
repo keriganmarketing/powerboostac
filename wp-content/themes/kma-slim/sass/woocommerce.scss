@@ -166,6 +166,21 @@
 
 }
 
+//Payment
+.woocommerce-checkout-payment {
+  .wc_payment_methods {
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 1rem !important;
+      border: 1px solid #ccc;
+    }
+  }
+}
+
 //Thank You
 .message.is-primary {
   background-color: #f7fdf8;
@@ -177,3 +192,5 @@
     padding: 0;
   }
 }
+
+
