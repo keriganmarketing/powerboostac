@@ -26,8 +26,8 @@ use Includes\Modules\Social\SocialSettingsPage;
                         <img class="footer-logo" src="<?php echo get_template_directory_uri() . '/img/logorev.png'; ?>">
                     </div>
                     <div class="column is-3">
-                        <h4>Contact</h4>
-
+                        <h4><a href="/faqs/">FAQs</a></h4>
+                        <h4><a href="/contact/">Contact</a></h4>
                         <h5 class="is-flex is-aligned"><span>Connect: </span><span class="social has-text-left">
                                     <?php
                                     $socialLinks = new SocialSettingsPage();
