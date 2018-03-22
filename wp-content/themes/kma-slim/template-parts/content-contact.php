@@ -20,37 +20,41 @@ include(locate_template('template-parts/sections/top.php'));
         <section id="content" class="section support">
             <div class="container">
                 <div class="columns is-multiline">
+                    <div class="column is-12">
+                        <?php the_content(); ?>
+                        <p>&nbsp;</p>
+                       
+                    </div>
                     <div class="column is-12 is-4-desktop">
                         <div class="entry-content content">
-                            <?php the_content(); ?>
+                            <p class="title is-3 is-primary">Need Help?</p>
+                            <p class="subtitle is-5">Here’s how you can get in touch with someone at PowerBoost AC.</p>
                         </div>
                     </div>
-                    <div class="column is-12 is-8-desktop">
-						
+                    <div class="column is-1">
+                    </div>
+                    <div class="column is-12 is-7-desktop">
                         <div class="entry-content content has-sidebar">
-							<div class="columns">
-								
-								<div class="column">
-									<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle" style="display:block;margin:auto">
-									<circle cx="12" cy="12" r="10"></circle>
-									<line x1="15" y1="9" x2="9" y2="15"></line>
-									<line x1="9" y1="9" x2="15" y2="15"></line>
-								</svg>
-									<p align="center">
-										<strong>Stay Connected:</strong>
-									</p>
-								</div>
-								<div class="column">
-									<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle" style="display:block;margin:auto">
-									<circle cx="12" cy="12" r="10"></circle>
-									<line x1="15" y1="9" x2="9" y2="15"></line>
-									<line x1="9" y1="9" x2="15" y2="15"></line>
-								</svg>
-									<p align="center">
-										<strong>Submit The Form Below:</strong>
-									</p>
-								</div>
-							</div>
+                            <div class="columns is-multiline">
+                                <div class="column has-text-centered">
+                                    <div class="icon is-large is-info">
+                                        <i class="fa fa-comments-o is-info" aria-hidden="true"></i>
+                                    </div>
+                                    <p></p>
+                                    <p class="title is-4 is-info">Stay Connected</p>
+                                    <p class="subtitle is-6"><a href="#" >Facebook</a> &nbsp; <a href="#" >YouTube</a></p>
+                                </div>
+                                <div class="column has-text-centered">
+                                    <div class="icon is-large is-info">
+                                        <i class="fa fa-envelope-open-o is-info" aria-hidden="true"></i>
+                                    </div>
+                                    <p></p>
+                                    <p class="title is-4 is-info">Reach Out</p>
+                                    <p class="subtitle is-6 is-primary">Submit the Form Below</p>
+                                </div>
+                            </div>
+
+                            <hr>
                             <?php echo do_shortcode('[contact_form]'); ?>
                         </div>
                     </div>
