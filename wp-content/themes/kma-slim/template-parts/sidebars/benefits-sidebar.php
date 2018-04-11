@@ -7,8 +7,8 @@
                 </p>
             </figure>
             <div class="media-content">
-                <h4 class="title is-5 is-info"><strong>Better A/C Cooling</strong></h4>
-                <p class="subtitle is-6">Lowers temperatures with <br>same energy output.</p>
+                <h4 class="title is-5 is-info"><strong>Optimize Your AC</strong></h4>
+                <p class="subtitle is-6">Get cooler temperatures<br>with same energy output.</p>
                 <p><a href="/how-it-works/">How it works
                         <span class="icon is-small">
                             <i class="fa fa-play" aria-hidden="true"></i>
@@ -25,8 +25,8 @@
                 </p>
             </figure>
             <div class="media-content">
-                <h4 class="title is-5 is-secondary"><strong>Less Energy Usage</strong></h4>
-                <p class="subtitle is-6">Lowers electricity and<br>maintenance costs.</p>
+                <h4 class="title is-5 is-secondary"><strong>Use Less Energy</strong></h4>
+                <p class="subtitle is-6">Lower your electricity bill and<br>maintenance costs immediately.</p>
                 <p><a href="/ashrae-approved/">ASHRAE approved
                         <span class="icon is-small">
                             <i class="fa fa-play" aria-hidden="true"></i>
@@ -43,8 +43,8 @@
                 </p>
             </figure>
             <div class="media-content">
-                <h4 class="title is-5 is-primary"><strong>Do-It-Yourself Solution</strong></h4>
-                <p class="subtitle is-6">Easy application in<br>30 minutes or less</p>
+                <h4 class="title is-5 is-primary"><strong>Do It Yourself!</strong></h4>
+                <p class="subtitle is-6">Apply Powerboost AC easily in<br>30 minutes or less.</p>
                 <p><a href="#">Instructions
                         <span class="icon is-small">
                             <i class="fa fa-play" aria-hidden="true"></i>
