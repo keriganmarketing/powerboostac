@@ -9,7 +9,7 @@
                         <a href="/product/power-boost-kit/" class="button is-primary" >Buy Now</a>
                     </div>
                     <div class="column">
-                        <a href="#" class="button is-secondary" >Watch Video</a>
+                        <a href="#video" class="button is-secondary" >Watch Video</a>
                     </div>
                 </div>
             </div>
