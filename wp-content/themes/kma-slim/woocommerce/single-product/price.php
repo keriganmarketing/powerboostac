@@ -24,5 +24,4 @@ global $product;
 
 ?>
 <p class="title is-2 is-info"><?php echo $product->get_price_html(); ?></p>
-<br>
 <p class="subtitle">FREE SHIPPING</p>
