@@ -28,7 +28,7 @@ include(locate_template('template-parts/sections/top.php'));
                     <div class="column is-12 is-4-desktop">
                         <div class="entry-content content">
                             <p class="title is-3 is-primary">Need Help?</p>
-                            <p class="subtitle is-5">Here’s how you can get in touch with someone at PowerBoost AC.</p>
+                            <p class="subtitle is-5">Here’s how to get in touch with a customer service agent. And remember, with PowerBoost AC, you won’t have to schedule a technician to come out and install the product, because the technician is you.</p>
                         </div>
                     </div>
                     <div class="column is-1">
