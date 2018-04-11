@@ -60,8 +60,8 @@
 .entry-summary {
 
 
-  .title, .subtitle {
-    text-align: right;
+  p.title, p.subtitle {
+    text-align: right !important;
   }
 
   form.cart {
