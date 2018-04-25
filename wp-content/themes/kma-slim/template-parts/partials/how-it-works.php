@@ -1,8 +1,12 @@
-<a name="video"></a>
-<div class="container"> 
+<a name="video" class="pad-anchor"></a>
+<div class="container">
     <div class="columns is-multiline is-aligned">
         <div class="column is-6 is-second-desktop">
-            <img class="logo" src="<?php echo get_template_directory_uri() . '/img/desktop/video@2x.png'; ?>">
+            <figure class="video is-16by9 has-border has-shadow">
+                <div class="embed-wrapper">
+                <iframe src="https://www.youtube-nocookie.com/embed/tUgGxobJMBs?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </figure>
         </div>
         <div class="column is-6 is-first-desktop">
             <h2 class="title is-1"><strong>The science is simple.</strong></h2>
