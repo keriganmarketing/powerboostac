@@ -23,7 +23,7 @@
             j.async = true;
             j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PCWV2XJ');</script>
+        })(window, document, 'script', 'dataLayer', 'GTM-TKBMDWS');</script>
     <!-- End Google Tag Manager -->
     <?php wp_head(); ?>
 </head>
@@ -31,7 +31,7 @@
 <body <?php body_class(); ?> >
 <!-- Google Tag Manager (noscript) -->
 <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCWV2XJ"
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKBMDWS"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
