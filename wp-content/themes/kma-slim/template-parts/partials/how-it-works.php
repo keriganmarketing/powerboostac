@@ -1,4 +1,4 @@
-<a name="video" class="pad-anchor"></a>
+<a name="video" id="video" class="pad-anchor">&nbsp;</a>
 <div class="container">
     <div class="columns is-multiline is-aligned">
         <div class="column is-6 is-second-desktop">
