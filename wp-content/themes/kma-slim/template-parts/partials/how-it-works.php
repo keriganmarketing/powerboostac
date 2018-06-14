@@ -1,5 +1,5 @@
-<a name="video" id="video" class="pad-anchor">&nbsp;</a>
 <div class="container">
+    <a name="video" id="video" class="pad-anchor">&nbsp;</a>
     <div class="columns is-multiline is-aligned">
         <div class="column is-6 is-second-desktop">
             <figure class="video is-16by9 has-border has-shadow">
