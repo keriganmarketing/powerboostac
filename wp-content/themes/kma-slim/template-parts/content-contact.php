@@ -56,6 +56,15 @@ include(locate_template('template-parts/sections/top.php'));
 
                             <hr>
                             <?php echo do_shortcode('[contact_form]'); ?>
+                            <div class="customer-support has-text-centered">
+                                <p>&nbsp;</p>
+                                <div class="icon is-large is-info">
+                                    <i class="fa fa-phone is-info" aria-hidden="true"></i>
+                                </div>
+                                <p></p>
+                                <p class="title is-4 is-info">Customer Support</p>
+                                <p class="subtitle is-6"><a href="tel:877-219-6587" >877-219-6587</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
