@@ -175,9 +175,9 @@ class WC_Stripe_Admin_Notices {
 
 			if ( empty( $show_ssl_notice ) ) {
 				// Show message if enabled and FORCE SSL is disabled and WordpressHTTPS plugin is not detected.
-				if ( function_exists( 'wc_site_is_https' ) && ! wc_site_is_https() ) {
+				if ( ! wc_checkout_is_https() ) {
 					/* translators: 1) link */
-					$this->add_admin_notice( 'ssl', 'notice notice-warning', sprintf( __( 'Stripe is enabled, but a SSL certificate is not detected. Your checkout may not be secure! Please ensure your server has a valid <a href="%1$s" target="_blank">SSL certificate</a> - Stripe will only work in test mode.', 'woocommerce-gateway-stripe' ), 'https://en.wikipedia.org/wiki/Transport_Layer_Security' ), true );
+					$this->add_admin_notice( 'ssl', 'notice notice-warning', sprintf( __( 'Stripe is enabled, but a SSL certificate is not detected. Your checkout may not be secure! Please ensure your server has a valid <a href="%1$s" target="_blank">SSL certificate</a>', 'woocommerce-gateway-stripe' ), 'https://en.wikipedia.org/wiki/Transport_Layer_Security' ), true );
 				}
 			}
 		}
