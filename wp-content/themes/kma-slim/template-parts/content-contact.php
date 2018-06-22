@@ -23,7 +23,7 @@ include(locate_template('template-parts/sections/top.php'));
                     <div class="column is-12">
                         <?php the_content(); ?>
                         <p>&nbsp;</p>
-                       
+
                     </div>
                     <div class="column is-12 is-4-desktop">
                         <div class="entry-content content">
@@ -42,7 +42,7 @@ include(locate_template('template-parts/sections/top.php'));
                                     </div>
                                     <p></p>
                                     <p class="title is-4 is-info">Stay Connected</p>
-                                    <p class="subtitle is-6"><a href="#" >Facebook</a> &nbsp; <a href="#" >YouTube</a></p>
+                                    <p class="subtitle is-6"><a href="https://www.facebook.com/PowerBoost-AC-408169336323629/" >Facebook</a> &nbsp; <a href="https://www.youtube.com/channel/UCAi5CA-1D3QbgTFMqIFUvIQ" >YouTube</a></p>
                                 </div>
                                 <div class="column has-text-centered">
                                     <div class="icon is-large is-info">
