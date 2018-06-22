@@ -27,7 +27,7 @@
             <div class="media-content">
                 <h4 class="title is-5 is-secondary"><strong>Use Less Energy</strong></h4>
                 <p class="subtitle is-6">Lower your electricity bill and<br>maintenance costs immediately.</p>
-                <p><a href="/ashrae-tested/">ASHRAE tested
+                <p><a href="/ashrae-tested/">Intertek tested
                         <span class="icon is-small">
                             <i class="fa fa-play" aria-hidden="true"></i>
                         </span>
