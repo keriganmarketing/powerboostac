@@ -1,7 +1,7 @@
 
 <div class="container has-text-centered">
     <div class="columns is-multiline is-justified-between">
-        <div class="column has-text-left-desktop">
+        <div class="column has-text-right-desktop">
             <p class="copyright">LIC#&nbsp;CAC1818012</p>
         </div>
         <div class="column">
@@ -9,7 +9,7 @@
                 &copy;<?php echo date('Y'); ?> <?php echo get_bloginfo(); ?>. All&nbsp;Rights&nbsp;Reserved.
             </p>
         </div>
-        <div class="column has-text-right-desktop">
+        <div class="column has-text-left-desktop">
             <p class="copyright">
                 <span class="siteby">
                     <svg version="1.1" id="kma" xmlns="http://www.w3.org/2000/svg"
