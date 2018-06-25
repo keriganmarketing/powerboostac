@@ -1,6 +1,6 @@
 
 <div class="container has-text-centered">
-    <p class="copyright">&copy;<?php echo date('Y'); ?> <?php echo get_bloginfo(); ?>. All&nbsp;Rights&nbsp;Reserved. LIC# CAC1818012
+    <p class="copyright">&copy;<?php echo date('Y'); ?> <?php echo get_bloginfo(); ?>. All&nbsp;Rights&nbsp;Reserved. <span style="margin: 0 10px">LIC# CAC1818012</span>
         <span class="siteby">
             <svg version="1.1" id="kma" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="14" width="20"
