@@ -1,6 +1,6 @@
 
 <div class="container has-text-centered">
-    <div class="columns is-multiline is-mobile is-justified-between">
+    <div class="columns is-multiline is-justified-between">
         <div class="column has-text-left-desktop">
             <p class="copyright">LIC#&nbsp;CAC1818012</p>
         </div>
