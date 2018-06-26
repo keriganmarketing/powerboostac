@@ -33,8 +33,10 @@ $show_back_to_cart_button = true;
 */
 
 // check the WooCommerce options
+$is_registration_enabled = version_compare( '3.0', WC()->version, '<=') ? $checkout->is_registration_enabled() : get_option( 'woocommerce_enable_signup_and_login_from_checkout' ) == 'yes'; 
+$has_checkout_fields = version_compare( '3.0', WC()->version, '<=') ? $checkout->get_checkout_fields() : (is_array($checkout->checkout_fields) && count($checkout->checkout_fields) > 0 );
 $show_login_step = ( is_user_logged_in() || 'no' === get_option( 'woocommerce_enable_checkout_login_reminder' ) ) ? false : true;
-$stop_at_login = ( ! $checkout->is_registration_enabled() && $checkout->is_registration_required() && ! is_user_logged_in() ) ? true : false;
+$stop_at_login = ( ! $is_registration_enabled && $checkout->is_registration_required() && ! is_user_logged_in() ) ? true : false;
 $checkout_url = apply_filters( 'woocommerce_get_checkout_url', version_compare( '2.5', WC()->version, '<=' ) ? wc_get_checkout_url() : WC()->cart->get_checkout_url() );
 
 // show the tabs
@@ -59,7 +61,7 @@ include_once('form-tabs.php');
 			<?php
 			woocommerce_login_form(
 				array(
-					'message'  => __( 'If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing &amp; Shipping section.', 'woocommerce' ),
+					'message'  => __( 'If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing &amp; Shipping section.', 'wp-multi-step-checkout' ),
 					'redirect' => wc_get_page_permalink( 'checkout' ),
 					'hidden'   => false,
 				)
@@ -78,7 +80,7 @@ include_once('form-tabs.php');
 
 <form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( $checkout_url ); ?>" enctype="multipart/form-data">
 
-	<?php if ( $checkout->get_checkout_fields() ) : ?>
+	<?php if ( $has_checkout_fields ) : ?>
 
 			<!-- Step Billing -->
 			<div class="wpmc-step-item wpmc-step-billing">

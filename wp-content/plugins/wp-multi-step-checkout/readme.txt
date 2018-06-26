@@ -5,7 +5,7 @@ Email: diana@burduja.eu
 Tags: multistep checkout, multi-step-checkout, woocommerce, checkout, shop checkout, checkout steps, checkout wizard, checkout style, checkout page
 Requires at least: 3.0.1
 Tested up to: 4.9
-Stable tag: 1.9
+Stable tag: 1.10
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -63,6 +63,9 @@ OR...
 = The login form isn't showing in the wizard =
 Please check the 'Display returning customer login reminder on the "Checkout" page' option found on the WP Admin -> WooCommerce -> Settings -> Accounts page
 
+= Is the plugin GDPR compatible? =
+The plugin doesn't add any cookies and it doesn't modify/add/delete any of the form fields. It simply reorganizes the checkout form into steps.
+
 == Screenshots ==
 
 1. Login form
@@ -73,6 +76,11 @@ Please check the 'Display returning customer login reminder on the "Checkout" pa
 6. On mobile devices
 
 == Changelog ==
+
+= 1.10 =
+* 25/06/2018
+* Fix: PHP notice for WooCommerce older than 3.0
+* Fix: message in login form wasn't translated
 
 = 1.9 =
 * 21/05/2018
