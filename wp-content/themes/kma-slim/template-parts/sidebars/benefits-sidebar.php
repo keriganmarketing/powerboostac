@@ -45,7 +45,7 @@
             <div class="media-content">
                 <h4 class="title is-5 is-primary"><strong>Do It Yourself!</strong></h4>
                 <p class="subtitle is-6">Apply Powerboost AC easily in<br>30 minutes or less.</p>
-                <p><a href="#">Instructions
+                <p><a href="https://powerboostac.com/wp-content/uploads/2018/07/PowerBoost-AC-Installation-Guide_060418.pdf">Instructions
                         <span class="icon is-small">
                             <i class="fa fa-play" aria-hidden="true"></i>
                         </span>
