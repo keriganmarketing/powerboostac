@@ -386,6 +386,8 @@ body {
   .home-header {
     background-image: url("/wp-content/themes/kma-slim/img/mobile/header-image.jpg");
     background-position: top center;
+    background-color: #f2f2f0;
+    background-repeat: no-repeat;
     height: 438px;
     background-size: 100% auto;
     @media screen and (min-width: 321px) {
