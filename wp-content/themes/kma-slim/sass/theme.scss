@@ -385,11 +385,18 @@ body {
 
   .home-header {
     background-image: url("/wp-content/themes/kma-slim/img/mobile/header-image.jpg");
-    background-size: cover;
     background-position: top center;
-    height: 414px;
+    height: 438px;
+    background-size: 100% auto;
+    @media screen and (min-width: 321px) {
+      height: 466px;
+    }
+    @media screen and (min-width: 414px) {
+      height: 480px;
+    }
     @media screen and (min-width: $tablet) {
       height: 414px;
+      background-size: cover;
       background-image: url("/wp-content/themes/kma-slim/img/desktop/header-image.jpg");
     }
     @media screen and (min-width: $desktop) {
