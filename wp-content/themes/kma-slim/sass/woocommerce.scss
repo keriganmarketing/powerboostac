@@ -125,6 +125,11 @@
       margin: .5rem 0;
       width: auto;
 
+      .onsale {
+        position: absolute;
+        right: 0;
+      }
+
       img {
         border: 1px solid #ddd;
         width: 270px;
@@ -164,11 +169,15 @@
     padding: 0 10px;
     background-color: $primary;
     color: #FFF;
-    position: absolute;
-    right: 0;
   }
 
   .related, .upsells {
+
+    .onsale {
+      position: absolute;
+      right: 0;
+    }
+
     ul.products {
       margin: 0 -1.5rem;
 
