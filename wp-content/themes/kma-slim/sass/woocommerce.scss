@@ -321,8 +321,11 @@
   }
 }
 
+#wc-stripe-payment-request-wrapper,
 #wc-stripe-payment-request-button-separator {
   display: none !important;
   visibility: hidden !important;
   color:rgba(255,255,255,0) !important;
+  border-color: rgba(255,255,255,0) !important;
+  border: none !important;
 }
