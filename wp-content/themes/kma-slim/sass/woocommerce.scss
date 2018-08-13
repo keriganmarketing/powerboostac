@@ -137,6 +137,13 @@
         width: 270px;
       }
 
+      img.special-image {
+        position: absolute;
+        left: 27px;
+        border: none;
+        top: 23px;
+      }
+
       .button.add_to_cart_button {
         display: block;
         background-color: $info;
@@ -181,11 +188,6 @@
       position: absolute;
       right: 0;
     }
-    .special-image {
-      float: right;
-      border:none;
-      width: 150px;
-    }
 
     ul.products {
       margin: 0 -1.5rem;
@@ -199,11 +201,12 @@
           margin: 0 1rem 0 0;
         }
 
-        img.spcial-image {
+        img.special-image {
           position: absolute;
-          left: 27px;
+          left: auto;
+          right: 10px;
+          width: 130px !important;
           border: none;
-          top: 23px;
         }
 
         .button.add_to_cart_button {
