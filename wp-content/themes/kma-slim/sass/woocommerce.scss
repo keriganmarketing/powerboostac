@@ -181,6 +181,11 @@
       position: absolute;
       right: 0;
     }
+    .special-image {
+      float: right;
+      border:none;
+      width: 150px;
+    }
 
     ul.products {
       margin: 0 -1.5rem;
@@ -192,6 +197,13 @@
           width: 80px;
           float: left;
           margin: 0 1rem 0 0;
+        }
+
+        .spcial-image {
+          position: absolute;
+          left: 27px;
+          border: none;
+          top: 23px;
         }
 
         .button.add_to_cart_button {
@@ -329,3 +341,4 @@
   border-color: rgba(255,255,255,0) !important;
   border: none !important;
 }
+
