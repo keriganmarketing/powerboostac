@@ -111,5 +111,5 @@ add_filter('woocommerce_sale_flash', 'woocommerce_custom_sale_text', 10, 3);
 function woocommerce_custom_sale_text($text, $post, $_product)
 {
     //return '<span class="onsale">Summer Special</span>';
-    return '<div class="is-pulled-right-desktop has-text-right-desktop"><img src="'.get_template_directory_uri().'/img/summer-special.png" ></div>';
+    return '<div class="is-pulled-right-desktop has-text-right-desktop"><img style="width:180px;" src="'.get_template_directory_uri().'/img/summer-special.png" ></div>';
 }
