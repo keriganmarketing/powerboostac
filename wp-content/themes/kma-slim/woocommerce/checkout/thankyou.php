@@ -49,18 +49,18 @@ if ( ! defined('ABSPATH')) {
 
                     <li class="woocommerce-order-overview__order order">
                         <?php _e('Order number:', 'woocommerce'); ?>
-                        <strong><?php echo $order->get_order_number(); ?></strong>
+                        <strong id="ordernumber"><?php echo $order->get_order_number(); ?></strong>
                     </li>
 
                     <li class="woocommerce-order-overview__date date">
                         <?php _e('Date:', 'woocommerce'); ?>
-                        <strong><?php echo wc_format_datetime($order->get_date_created()); ?></strong>
+                        <strong id="orderdate"><?php echo wc_format_datetime($order->get_date_created()); ?></strong>
                     </li>
 
                     <?php if (is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_email()) : ?>
                         <li class="woocommerce-order-overview__email email">
                             <?php _e('Email:', 'woocommerce'); ?>
-                            <strong><?php echo $order->get_billing_email(); ?></strong>
+                            <strong id="orderemail"><?php echo $order->get_billing_email(); ?></strong>
                         </li>
                     <?php endif; ?>
 
@@ -72,7 +72,7 @@ if ( ! defined('ABSPATH')) {
                     <?php if ($order->get_payment_method_title()) : ?>
                         <li class="woocommerce-order-overview__payment-method method">
                             <?php _e('Payment method:', 'woocommerce'); ?>
-                            <strong><?php echo wp_kses_post($order->get_payment_method_title()); ?></strong>
+                            <strong id="paymentmethod"><?php echo wp_kses_post($order->get_payment_method_title()); ?></strong>
                         </li>
                     <?php endif; ?>
 
