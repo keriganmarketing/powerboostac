@@ -66,12 +66,14 @@
     del {
       color: red;
       display: inline-block;
-      padding: 0 5px;
-      font-size:.9em;
+      padding: 10px 5px;
     }
 
     ins {
       text-decoration: none;
+      span {
+        font-weight: 800;
+      }
     }
   }
 
@@ -152,12 +154,14 @@
           color: red;
           text-decoration: line-through !important;
           display: inline-block;
-          padding: 0 5px;
-          font-size: .9em;
+          padding: 10px 5px;
         }
 
         ins {
           text-decoration: none;
+          span {
+            font-weight: 800;
+          }
         }
       }
     }
@@ -204,12 +208,14 @@
             color: red;
             text-decoration: line-through !important;
             display: inline-block;
-            padding: 0 5px;
-            font-size: .9em;
+            padding: 10px 5px;
           }
   
           ins {
             text-decoration: none;
+            span {
+              font-weight: 800;
+            }
           }
         }
       }
