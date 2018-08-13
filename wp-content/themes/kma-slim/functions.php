@@ -117,35 +117,35 @@ function woocommerce_custom_sale_text($text, $post, $_product)
  * Adding custom javascripts or php action on WooCommerce Thank you page
  * Works with WooCommerce 3.0 or above
  */
-add_action("woocommerce_thankyou", "fb_conversion_tag", 20);
-if(!function_exists('fb_conversion_tag')) {
-    function xlwcty_add_custom_action_thankyou($order_id) {
-        if ($order_id > 0) {
-            $order = wc_get_order($order_id);
-            if ($order instanceof WC_Order) {
-                $order_id = $order->get_id(); // order id
-                $order_key = $order->get_order_key(); // order key
-                $order_total = $order->get_total(); // order total
-                $order_currency = $order->get_currency(); // order currency
-                $order_payment_method = $order->get_payment_method(); // order payment method
-                $order_shipping_country = $order->get_shipping_country(); // order shipping country
-                $order_billing_country = $order->get_billing_country(); // order billing country
-                $order_status = $order->get_status(); // order status
-                /**
-                * full list methods and property that can be accessed from $order object
-                * https://docs.woocommerce.com/wc-apidocs/class-WC_Order.html
-                */
-                ?>
-                <script>
-                    fbq('track', 'Purchase', {
-                        value: "{{<?php echo $order_total; ?>}}",
-                        currency: 'USD',
-                        content_ids: ''{{productID}}'',
-                        content_type: 'product',
-                    });
-                </script>
-                <?php
-            }
-        }
-    }
-}
+// add_action("woocommerce_thankyou", "fb_conversion_tag", 20);
+// if(!function_exists('fb_conversion_tag')) {
+//     function xlwcty_add_custom_action_thankyou($order_id) {
+//         if ($order_id > 0) {
+//             $order = wc_get_order($order_id);
+//             if ($order instanceof WC_Order) {
+//                 $order_id = $order->get_id(); // order id
+//                 $order_key = $order->get_order_key(); // order key
+//                 $order_total = $order->get_total(); // order total
+//                 $order_currency = $order->get_currency(); // order currency
+//                 $order_payment_method = $order->get_payment_method(); // order payment method
+//                 $order_shipping_country = $order->get_shipping_country(); // order shipping country
+//                 $order_billing_country = $order->get_billing_country(); // order billing country
+//                 $order_status = $order->get_status(); // order status
+//                 /**
+//                 * full list methods and property that can be accessed from $order object
+//                 * https://docs.woocommerce.com/wc-apidocs/class-WC_Order.html
+//                 */
+//                 ?>
+//                 <script>
+//                     fbq('track', 'Purchase', {
+//                         value: "{{<?php echo $order_total; ?>}}",
+//                         currency: 'USD',
+//                         content_ids: ''{{productID}}'',
+//                         content_type: 'product',
+//                     });
+//                 </script>
+//                 <?php
+//             }
+//         }
+//     }
+// }
