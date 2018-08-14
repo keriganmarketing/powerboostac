@@ -5,7 +5,13 @@ use Includes\Modules\Social\SocialSettingsPage;
 ?>
     <div class="sticky-footer">
         <div class="section call-to-action">
-            <?php include(locate_template('template-parts/partials/call-to-action.php')); ?>
+            <?php 
+            if(get_post_type() == 'product'){
+                include(locate_template('template-parts/partials/get-help.php')); 
+            }else{
+                include(locate_template('template-parts/partials/call-to-action.php')); 
+            }
+            ?>
         </div>
         <div id="bot">
             <div class="container">
