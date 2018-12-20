@@ -46,14 +46,6 @@ use Includes\Modules\Navwalker\BulmaNavwalker;
                         </div>
                         <div class="navbar-end mini-nav is-hidden-mobile">
                             <div class="navbar-item">
-                                <a href="/cart/">
-                                    <span class="icon is-small">
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="navbar-item seperator">|</div>
-                            <div class="navbar-item">
                                 Connect:
                             </div>
                             <div class="navbar-item social-buttons">
@@ -97,7 +89,7 @@ use Includes\Modules\Navwalker\BulmaNavwalker;
                             'walker'         => new BulmaNavwalker()
                         ]); ?>
                         <div class="navbar-end">
-                            <a class="button is-primary" href="/product/power-boost-kit/">Buy Now</a>
+                            <a class="button is-primary" href="#form">More Info</a>
                         </div>
                     </nav>
                 </div>
