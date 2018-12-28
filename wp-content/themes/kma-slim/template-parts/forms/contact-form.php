@@ -15,7 +15,7 @@
             </div>
         </div>
 
-        </div class="column is-full">
+        <div class="column is-full">
             <div class="field">
                 <label class="label sr-only">Message</label>
                 <textarea class="textarea" name="message" placeholder="Type your message here."></textarea>
