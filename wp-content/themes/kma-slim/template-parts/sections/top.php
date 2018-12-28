@@ -37,7 +37,7 @@ use Includes\Modules\Navwalker\BulmaNavwalker;
                     <nav class="navbar navbar-top-row">
                         <div class="navbar-brand">
                             <a href="/">
-                                <img class="logo" src="<?php echo get_template_directory_uri() . '/img/logo@2x.png'; ?>"
+                                <img class="logo" src="<?php echo get_template_directory_uri() . '/img/koolmaxxlogo.png'; ?>"
                                      alt="<?= bloginfo(); ?>">
                             </a>
                         </div>
