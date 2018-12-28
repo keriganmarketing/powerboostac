@@ -4,13 +4,14 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitce01450caa094108bfd947aa69a52fc9
+class ComposerStaticInit6a9536a83e4f924b9d8de13c6c07e0d5
 {
     public static $files = array (
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
-        'de85a44be454aa97188dad52ed888bed' => __DIR__ . '/..' . '/panique/laravel-sass/sass-compiler.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        'de85a44be454aa97188dad52ed888bed' => __DIR__ . '/..' . '/panique/laravel-sass/sass-compiler.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -74,9 +75,9 @@ class ComposerStaticInitce01450caa094108bfd947aa69a52fc9
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitce01450caa094108bfd947aa69a52fc9::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitce01450caa094108bfd947aa69a52fc9::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitce01450caa094108bfd947aa69a52fc9::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6a9536a83e4f924b9d8de13c6c07e0d5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6a9536a83e4f924b9d8de13c6c07e0d5::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit6a9536a83e4f924b9d8de13c6c07e0d5::$classMap;
 
         }, null, ClassLoader::class);
     }

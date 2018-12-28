@@ -1,4 +1,4 @@
-<div class="home-header">
+<!-- <div class="home-header">
     <div class="container">
         <div class="columns hero-content is-mobile">
             <div class="column hero-item is-5-tablet is-4-desktop">
@@ -15,4 +15,6 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+
+<?php echo do_shortcode('[smartslider3 slider=2]'); ?>

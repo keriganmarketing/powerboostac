@@ -368,7 +368,7 @@ body {
     padding-top: 54px;
   }
   .sticky-header-pad.support {
-    height: 32px;
+    height: 68px;
   }
 }
 
@@ -383,69 +383,6 @@ body {
     padding-top: 117px;
   }
 
-  .home-header {
-    background-image: url("/wp-content/themes/kma-slim/img/mobile/header-image.jpg");
-    background-position: top center;
-    background-color: #f2f2f0;
-    background-repeat: no-repeat;
-    height: 438px;
-    background-size: 100% auto;
-    @media screen and (min-width: 321px) {
-      height: 466px;
-    }
-    @media screen and (min-width: 414px) {
-      height: 480px;
-    }
-    @media screen and (min-width: $tablet) {
-      height: 414px;
-      background-size: cover;
-      background-image: url("/wp-content/themes/kma-slim/img/desktop/header-image.jpg");
-    }
-    @media screen and (min-width: $desktop) {
-      height: 547px;
-    }
-
-    .container { height: 100%; }
-
-    .hero-content {
-      align-items: flex-end;
-      justify-content: center;
-      height: 100%;
-      padding: 2rem;
-
-      @media screen and (min-width: $tablet) {
-        justify-content: flex-start;
-        align-items: center;
-      }
-
-      @media screen and (min-width: $desktop) {
-        justify-content: flex-start;
-        align-items: center;
-        padding: 0;
-      }
-
-      .hero-item {
-        h1 {
-          color: $info;
-          font-weight: $weight-bold;
-          line-height: 1em;
-          margin-bottom: 2.5rem;
-          @media screen and (max-width: $tablet) {
-            font-size: 35px;
-          }
-        }
-        strong {
-          color: $info;
-        }
-        padding: 4rem 0 0;
-      }
-    }
-  }
-
-
-  .cooler-temperatures {
-    background-image: url(/img/slider1.jpg)
-  }
   .enjoy-temps {
     background-color: teal;
     width: 100%;
@@ -458,26 +395,18 @@ body {
   }
 
   .why-koolmaxx {
-    background-color: #004466;
    
     .why-message {
-      h1 {
-        color: #FFF
+      h2 {
+        color: #FFF;
         text-align: center;
-        display: inline-block;
       }
       p {
-        color: #FFF
+        color: #FFF;
         text-align: center;
-        display: inline-block;
       }
     }
-    h2 {
-      color: #0000b3;
-    }
-    p {
-      color: #0000b3;
-    }
+
   }
 
   //sections
@@ -497,58 +426,8 @@ body {
   }
 
   .big-features {
-    .columns {
-      .column {
-        padding: 2rem;
-
-        p {
-          line-height: $content-heading-line-height;
-        }
-
-        .image {
-          text-align: center;
-          display: block;
-          margin: .5rem auto 1.5rem;
-          border-radius: 50%;
-          height: 96px;
-          width: 96px;
-          padding: .87rem;
-          img {
-            margin: auto;
-            display: block;
-            width: auto;
-            height: auto;
-          }
-        }
-        h2, p {
-          max-width: 255px;
-          margin: .5rem auto;
-        }
-      }
-      .cooling {
-        .image {
-          border: $secondary 2px solid;
-        }
-        h2 {
-          color: $secondary;
-        }
-      }
-      .energy {
-        .image {
-          border: $primary 2px solid;
-        }
-        h2 {
-          color: $primary;
-        }
-      }
-      .diy {
-        .image {
-          border: $info 2px solid;
-        }
-        h2 {
-          color: $info;
-        }
-      }
+    p, ol, ul {
+      margin-bottom: 1rem;
     }
   }
 
@@ -566,6 +445,7 @@ body {
   }
 
   .how-it-works {
+    background-color: #004466;
     .section-action {
       padding: 1rem 0;
     }
@@ -602,7 +482,7 @@ body {
 }
 
 .call-to-action {
-  h3 { color: $white; }
+  h3, h2 { color: $white; }
   background-color: $primary;
   background-image: url("/wp-content/themes/kma-slim/img/hex-pattern.png");
 

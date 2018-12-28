@@ -73,7 +73,7 @@
 .slides,
 .slide {
   display: block;
-  height:100vh;
+  height:100%;
   -webkit-transition: opacity linear 1.5s;
   transition:opacity linear 1.5s;
   background-size: cover;
@@ -125,4 +125,8 @@ Social Media
     width: 35px;
     margin: .1rem .25rem;
   }
+}
+
+.has-text-weight-bold {
+  font-weight: bold;
 }

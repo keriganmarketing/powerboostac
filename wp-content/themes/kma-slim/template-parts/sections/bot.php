@@ -25,7 +25,7 @@ use Includes\Modules\Social\SocialSettingsPage;
                         ]); ?>
                     </div>
                     <div class="column is-6 has-text-centered footer-logo-container">
-                        <img class="footer-logo" src="<?php echo get_template_directory_uri() . '/img/footerlogo.png'; ?>">
+                        <img class="footer-logo" src="<?php echo get_template_directory_uri() . '/img/logorev.png'; ?>">
                     </div>
                     <div class="column is-3">
                         <h4><a href="/faqs/">FAQs</a></h4>
