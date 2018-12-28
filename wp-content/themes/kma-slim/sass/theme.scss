@@ -457,6 +457,29 @@ body {
     height: 100px;
   }
 
+  .why-koolmaxx {
+    background-color: #004466;
+   
+    .why-message {
+      h1 {
+        color: #FFF
+        text-align: center;
+        display: inline-block;
+      }
+      p {
+        color: #FFF
+        text-align: center;
+        display: inline-block;
+      }
+    }
+    h2 {
+      color: #0000b3;
+    }
+    p {
+      color: #0000b3;
+    }
+  }
+
   //sections
   .section {
     clear: both;
