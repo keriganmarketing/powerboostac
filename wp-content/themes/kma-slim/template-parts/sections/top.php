@@ -37,7 +37,7 @@ use Includes\Modules\Navwalker\BulmaNavwalker;
                     <nav class="navbar navbar-top-row">
                         <div class="navbar-brand">
                             <a href="/">
-                                <img class="logo" src="<?php echo get_template_directory_uri() . '/img/logo@2x.png'; ?>"
+                                <img class="logo" src="<?php echo get_template_directory_uri() . '/img/koolmaxxlogo.png'; ?>"
                                      alt="<?= bloginfo(); ?>">
                             </a>
                         </div>
@@ -45,14 +45,6 @@ use Includes\Modules\Navwalker\BulmaNavwalker;
                             <img class="tagline" src="<?php echo get_template_directory_uri() . '/img/tagline.png'; ?>">
                         </div>
                         <div class="navbar-end mini-nav is-hidden-mobile">
-                            <div class="navbar-item">
-                                <a href="/cart/">
-                                    <span class="icon is-small">
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="navbar-item seperator">|</div>
                             <div class="navbar-item">
                                 Connect:
                             </div>
@@ -97,7 +89,7 @@ use Includes\Modules\Navwalker\BulmaNavwalker;
                             'walker'         => new BulmaNavwalker()
                         ]); ?>
                         <div class="navbar-end">
-                            <a class="button is-primary" href="/product/power-boost-kit/">Buy Now</a>
+                            <a class="button is-primary" href="#form">More Info</a>
                         </div>
                     </nav>
                 </div>

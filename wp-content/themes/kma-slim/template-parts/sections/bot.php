@@ -6,11 +6,7 @@ use Includes\Modules\Social\SocialSettingsPage;
     <div class="sticky-footer">
         <div class="section call-to-action">
             <?php 
-            if(get_post_type() == 'product'){
-                include(locate_template('template-parts/partials/get-help.php')); 
-            }else{
-                include(locate_template('template-parts/partials/call-to-action.php')); 
-            }
+               include(locate_template('template-parts/partials/call-to-action.php')); 
             ?>
         </div>
         <div id="bot">
@@ -29,7 +25,7 @@ use Includes\Modules\Social\SocialSettingsPage;
                         ]); ?>
                     </div>
                     <div class="column is-6 has-text-centered footer-logo-container">
-                        <img class="footer-logo" src="<?php echo get_template_directory_uri() . '/img/logorev.png'; ?>">
+                        <img class="footer-logo" src="<?php echo get_template_directory_uri() . '/img/footerlogo.png'; ?>">
                     </div>
                     <div class="column is-3">
                         <h4><a href="/faqs/">FAQs</a></h4>

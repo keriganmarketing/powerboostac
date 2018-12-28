@@ -442,6 +442,44 @@ body {
     }
   }
 
+
+  .cooler-temperatures {
+    background-image: url(/img/slider1.jpg)
+  }
+  .enjoy-temps {
+    background-color: teal;
+    width: 100%;
+    height: 60px;
+  }
+  .koolmaxx-bar {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+  }
+
+  .why-koolmaxx {
+    background-color: #004466;
+   
+    .why-message {
+      h1 {
+        color: #FFF
+        text-align: center;
+        display: inline-block;
+      }
+      p {
+        color: #FFF
+        text-align: center;
+        display: inline-block;
+      }
+    }
+    h2 {
+      color: #0000b3;
+    }
+    p {
+      color: #0000b3;
+    }
+  }
+
   //sections
   .section {
     clear: both;
