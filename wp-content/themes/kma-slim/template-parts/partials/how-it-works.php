@@ -1,10 +1,22 @@
-<div class="container">
+<?php 
+    $args = array(
+        'post_type'=>'video', 
+        'orderby'=>'menu_order', 
+        'posts_per_page'=>'1'); 
+
+    $videos = new WP_Query($args); 
+    while ($videos->have_posts()) : $videos->the_post();
+    $videoId = (get_field('youtube_id') != '' ? get_field('youtube_id') : '123456' ); 
+    endwhile; wp_reset_postdata(); 
+    
+    ?>
+    <div class="container">
     <a name="video" id="video" class="pad-anchor">&nbsp;</a>
     <div class="columns is-multiline is-aligned">
         <div class="column is-6 is-second-desktop">
             <figure class="video is-16by9 has-border has-shadow">
                 <div class="embed-wrapper">
-                <iframe src="https://www.youtube-nocookie.com/embed/tUgGxobJMBs?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/<?php echo $videoId; ?>?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </figure>
         </div>
