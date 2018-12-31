@@ -432,11 +432,7 @@ body {
   }
 
   .efficiency-loss {
-    h2 {
-      color: $primary;
-      font-weight: $weight-bold;
-    }
-    background-color: #ecedeb;
+    background-color: #004466;
     box-shadow: inset 0 0 1rem rgba(0,0,0,.2);
 
     .columns {
@@ -445,7 +441,11 @@ body {
   }
 
   .how-it-works {
-    background-color: #004466;
+    background-color: #ecedeb;
+
+    h2 {
+      color: $primary;
+    }
     .section-action {
       padding: 1rem 0;
     }

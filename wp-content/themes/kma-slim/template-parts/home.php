@@ -16,6 +16,10 @@ include(locate_template('template-parts/sections/top.php'));
         <?php include(locate_template('template-parts/partials/big-features.php')); ?>
     </div>
 
+    <div class="section efficiency-loss">
+        <?php include(locate_template('template-parts/partials/efficiency-loss.php')); ?>
+    </div>
+
     <div class="section how-it-works">
         <?php include(locate_template('template-parts/partials/how-it-works.php')); ?>
     </div>

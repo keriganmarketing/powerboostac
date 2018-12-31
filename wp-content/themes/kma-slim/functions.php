@@ -15,6 +15,7 @@ use Includes\Modules\Social\SocialSettingsPage;
 
 
 require('vendor/autoload.php');
+include('post-types/video.php');
 
 new CleanWP();
 
