@@ -5,7 +5,7 @@
             <p>Why Use KoolMaxx? KoolMaxx is an additive that removes oil fouling from your air conditioning system. Oil fouling will cause a loss of about 7% efficiency in the first year of an air conditioner’s life, up to a loss of 30% to 40% efficiency over time. By removing oil fouling, the refrigerant in your air conditioner flows throughout the system without being restricted – this leads to a more efficient system that provides cooler air while extending compressor life.</p>
             &nbsp;
         </div>
-        <div class="columns hero-content is-multiline ">
+        <div class="columns is-multiline ">
             <div class="column is-4">
                 <div class="card">
                     <div class="card-content">
