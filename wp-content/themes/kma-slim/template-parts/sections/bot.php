@@ -29,7 +29,7 @@ use Includes\Modules\Social\SocialSettingsPage;
                     </div>
                     <div class="column is-3">
                         <h4><a href="/faqs/">FAQs</a></h4>
-                        <h4><a href="/contact/">Contact</a></h4>
+                        <h4><a href="/videos/">Videos</a></h4>
                         <h5 class="is-flex is-aligned"><span>Connect: </span><span class="social has-text-left">
                                     <?php
                                     $socialLinks = new SocialSettingsPage();
