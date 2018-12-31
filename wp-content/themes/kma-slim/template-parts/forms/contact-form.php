@@ -5,17 +5,24 @@
     <input type="hidden" name="ip_address" value="{{ip-address}}" >
     <input type="hidden" name="referrer" value="{{referrer}}" >
     <div class="columns is-multiline">
-        <div class="column is-full is-half-desktop">
+        <div class="column is-full is-one-third-desktop">
             <div class="field">
                 <label class="label sr-only">Name</label>
-                <input type="text" name="first_name" class="input" placeholder="First Name" required>
+                <input type="text" name="full_name" class="input" placeholder="Full Name" required>
             </div>
         </div>
         
-        <div class="column is-full is-half-desktop">
+        <div class="column is-full is-one-third-desktop">
             <div class="field">
                 <label class="label sr-only">Email</label>
                 <input type="email" name="email_address" class="input email" placeholder="Email Address" required>
+            </div>
+        </div>
+
+        <div class="column is-full is-one-third-desktop">
+            <div class="field">
+                <label class="label sr-only">Phone</label>
+                <input type="tel" name="phone_number" class="input email" placeholder="Phone Number" required>
             </div>
         </div>
 

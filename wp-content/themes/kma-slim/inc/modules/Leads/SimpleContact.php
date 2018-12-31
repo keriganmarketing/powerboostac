@@ -9,7 +9,8 @@ class SimpleContact extends Leads
         parent::__construct ();
         parent::assembleLeadData(
             [
-                'message' => 'Message'
+                'message' => 'Message',
+                'phone_number' => 'Phone Numbner'
             ]
         );
         parent::set('postType', 'Contact Submission');
