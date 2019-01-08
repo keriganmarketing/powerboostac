@@ -27,8 +27,6 @@ if (is_admin()) {
 $layouts = new Layouts();
 $layouts->addPageHeadlines();
 $layouts->createSidebarSelector();
-$layouts->addSidebar('Featured Image Sidebar');
-$layouts->addSidebar('Benefits Sidebar');
 
 $contact = new SimpleContact();
 $contact->setupAdmin();
@@ -90,28 +88,4 @@ function getPageChildren($pageName)
     ]);
 
     return $children;
-}
-
-//WooCommerce stuff
-remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 10);
-
-add_filter('woocommerce_checkout_fields', function ($fields) {
-    foreach ($fields as &$fieldset) {
-        foreach ($fieldset as &$field) {
-            // if you want to add the form-group class around the label and the input
-            $field['class'][] = 'field';
-
-            // add form-control to the actual input
-            $field['input_class'][] = 'input';
-        }
-    }
-
-    return $fields;
-});
-
-add_filter('woocommerce_sale_flash', 'woocommerce_custom_sale_text', 10, 3);
-function woocommerce_custom_sale_text($text, $post, $_product)
-{
-    //return '<span class="onsale">Summer Special</span>';
-    return '<div class="is-pulled-right-desktop has-text-right-desktop"><img class="special-image" style="width:180px;" src="'.get_template_directory_uri().'/img/summer-special-blue.png" ></div>';
 }

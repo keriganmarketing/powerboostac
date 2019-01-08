@@ -30,17 +30,17 @@ use Includes\Modules\Social\SocialSettingsPage;
                     <div class="column is-3">
                         <h4><a href="/faqs/">FAQs</a></h4>
                         <h4><a href="/videos/">Videos</a></h4>
-                        <h5 class="is-flex is-aligned"><span>Connect: </span><span class="social has-text-left">
+                        <!-- <h5 class="is-flex is-aligned"><span>Connect: </span><span class="social has-text-left">
                                     <?php
-                                    $socialLinks = new SocialSettingsPage();
-                                    $socialIcons = $socialLinks->getSocialLinks('svg', 'circle');
-                                    if (is_array($socialIcons)) {
-                                        foreach ($socialIcons as $socialId => $socialLink) {
-                                            echo '<a class="' . $socialId . '" href="' . $socialLink[0] . '" target="_blank" >' . $socialLink[1] . '</a>';
-                                        }
-                                    }
+                                    // $socialLinks = new SocialSettingsPage();
+                                    // $socialIcons = $socialLinks->getSocialLinks('svg', 'circle');
+                                    // if (is_array($socialIcons)) {
+                                    //     foreach ($socialIcons as $socialId => $socialLink) {
+                                    //         echo '<a class="' . $socialId . '" href="' . $socialLink[0] . '" target="_blank" >' . $socialLink[1] . '</a>';
+                                    //     }
+                                    // }
                                     ?>
-                                </span></h5>
+                                </span></h5> -->
                     </div>
                 </div>
             </div>

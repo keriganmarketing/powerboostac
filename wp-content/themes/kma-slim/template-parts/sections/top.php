@@ -44,24 +44,24 @@ use Includes\Modules\Navwalker\BulmaNavwalker;
                         <div class="navbar-middle is-hidden-mobile">
                             <img class="tagline" src="<?php echo get_template_directory_uri() . '/img/tagline.png'; ?>">
                         </div>
-                        <div class="navbar-end mini-nav is-hidden-mobile">
-                            <div class="navbar-item">
+                         <!-- <div class="navbar-end mini-nav is-hidden-mobile">
+                           <div class="navbar-item">
                                 Connect:
                             </div>
                             <div class="navbar-item social-buttons">
                                 <div class="social has-text-left">
                                     <?php
-                                    $socialLinks = new SocialSettingsPage();
-                                    $socialIcons = $socialLinks->getSocialLinks('svg', 'circle');
-                                    if (is_array($socialIcons)) {
-                                        foreach ($socialIcons as $socialId => $socialLink) {
-                                            echo '<a class="' . $socialId . '" href="' . $socialLink[0] . '" target="_blank" >' . $socialLink[1] . '</a>';
-                                        }
-                                    }
+                                    // $socialLinks = new SocialSettingsPage();
+                                    // $socialIcons = $socialLinks->getSocialLinks('svg', 'circle');
+                                    // if (is_array($socialIcons)) {
+                                    //     foreach ($socialIcons as $socialId => $socialLink) {
+                                    //         echo '<a class="' . $socialId . '" href="' . $socialLink[0] . '" target="_blank" >' . $socialLink[1] . '</a>';
+                                    //     }
+                                    // }
                                     ?>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </nav>
                 </div>
             </div>
