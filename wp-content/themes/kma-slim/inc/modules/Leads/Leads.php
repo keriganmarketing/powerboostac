@@ -26,7 +26,7 @@ class Leads
         $this->domain     = 'powerboostac.com';
 
         //separate multiple email addresses with a ';'
-        $this->adminEmail = 'foremandennis22@gmail.com, powerboost03@gmail.com';
+        $this->adminEmail = 'foremandennis22@gmail.com, koolmaxxinfo@gmail.com';
         $this->ccEmail    = ''; //Admin email only
         $this->bccEmail   = 'support@kerigan.com';
 
