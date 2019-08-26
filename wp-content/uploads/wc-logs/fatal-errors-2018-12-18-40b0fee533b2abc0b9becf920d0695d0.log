@@ -1,0 +1,12 @@
+2018-12-18T11:08:03+00:00 CRITICAL Uncaught Error: Class 'WPSEO_Post_Type_Archive_Notification_Handler' not found in /home/forge/demo.powerboostac.com/wp-content/plugins/wordpress-seo/admin/class-admin-init.php:53
+Stack trace:
+#0 /home/forge/demo.powerboostac.com/wp-content/plugins/wordpress-seo/wp-seo-main.php(389): WPSEO_Admin_Init->__construct()
+#1 /home/forge/demo.powerboostac.com/wp-includes/class-wp-hook.php(286): wpseo_admin_init('')
+#2 /home/forge/demo.powerboostac.com/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#3 /home/forge/demo.powerboostac.com/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/forge/demo.powerboostac.com/wp-settings.php(327): do_action('plugins_loaded')
+#5 /home/forge/demo.powerboostac.com/wp-config.php(92): require_once('/home/forge/dem...')
+#6 /home/forge/demo.powerboostac.com/wp-load.php(37): require_once('/home/forge/dem...')
+#7 /home/forge/demo.powerboostac.com/wp-admin/admin.php(31): require_once('/home/forge/dem...')
+#8 /home/forge/demo.powerboostac.com/wp-admin/inde
+
